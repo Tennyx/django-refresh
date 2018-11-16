@@ -1,0 +1,13 @@
+#!/bin/bash
+
+DBNAME=$1
+
+find . -type f -name '000*_initial.py'
+find . -type f -name '000*_initial.py' -delete
+
+dropdb -U postgres $DBNAME
+createdb -U postgres $DBNAME
+
+python3 manage.py makemigrations
+python3 manage.py migrate
+python3 manage.py createsuperuser
