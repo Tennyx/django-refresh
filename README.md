@@ -1,5 +1,5 @@
 # django-refresh
-Bash script for Django &amp; PostgreSQL users in development environment. Automates db deletion, creation, migration all the way up to createsuperuser prompt.
+Bash script for Django &amp; PostgreSQL users in development environment. Automates db deletion, creation, migration all the way up to createsuperuser prompt. Similar to rake:db reset in rails.
 
 ### Run it 
 
